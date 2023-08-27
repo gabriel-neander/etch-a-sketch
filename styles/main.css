@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+body h1 {
+    margin: 20px 0 0px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+body h1 img {
+    width: 35px;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Board */
+.screen {
+    border: 1px solid #cecece;
+    display: grid;
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 10px 10px 9px -4px rgba(0,0,0,0.3);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+/* Buttons */
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 23, 23);
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    height: 432px; 
+    width: 150px;
+}
+.buttons button {
+    width: 130px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 0px;
+    margin: 5px 0;
+    font-size: 16px;
+    box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.47);
+    background: linear-gradient(90deg, rgba(56,130,246,1) 0%, rgba(53,123,233,1) 35%, rgba(0,151,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+.buttons button:hover {
+    width: 135px;
+    font-weight: bold;
+}
+.buttons button:active {
+    background: rgb(82, 173, 233);
+    font-weight: lighter;
+}
+.buttons input {
+    width: 50px;
+    margin-left: 43px;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+.buttons #changeButton {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 70px;
+}
+.buttons p {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+/* Footer */
+footer {
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Etch-a-sketch!</title>
+</head>
+<body>
+    <h1><img src="images/pen.png"> Etch-a-sketch!</h1>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="changeColor('black')">Black!</button>
+            <button onclick="changeColor('green')">Green!</button>
+            <button onclick="changeToRainbows()">Go random!</button>
+            <button onclick="changeColor('white')">Erase</button>
+            <button onclick="clearBoard()">Clear!</button>
+            <div>
+                <p>Change size!</p>
+                <input  type="text" placeholder="2 - 100" onchange="changeSize(this.value)" />
+                <button id="changeButton">Go!</button>
+            </div>
+        </div>
+        <div class="title"></div>
+        <div class="content">
+            <div class="screen"></div>
+        </div>
+    </div>
+    <footer>Part of <a href="https://www.theodinproject.com/">The Odin Project curriculum.</a></footer>
+</body>
+<script src="js/scripts.js"></script>
+<script src="js/jscolor.js"></script>
+</html>
